@@ -1,26 +1,28 @@
 {
   "name": "unit-4-game",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/BrendanCannell/unit-4-game.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/BrendanCannell/unit-4-game/issues"
-  },
-  "homepage": "https://github.com/BrendanCannell/unit-4-game#readme",
+  "repository": "git@github.com:BrendanCannell/unit-4-game.git",
+  "author": "Brendan Cannell <brendan@cannells.com>",
+  "license": "MIT",
   "dependencies": {
-    "immutable": "^3.8.2"
+    "css-loader": "^1.0.0",
+    "file-loader": "^2.0.0",
+    "jquery": "^3.3.1",
+    "path": "^0.12.7",
+    "style-loader": "^0.23.0",
+    "webpack": "^4.20.2",
+    "babel-loader": "^8.0.4",
+    "babel-preset-env": "^1.7.0",
+    "webpack-cli": "^3.1.2"
   },
   "devDependencies": {
-    "babel-cli": "^6.26.0"
+    "webpack-dev-server": "^3.1.9"
+  },
+  "peerDependencies": {
+    "@babel/core": "^7.0.0"
+  },
+  "scripts": {
+    "build": "webpack"
   }
 }

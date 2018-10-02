@@ -1,1 +1,7 @@
 # unit-4-game
+
+I can't say that I'm especially proud of this one. Initially I planned to write this assignment with Datascript, a library that supports the EAVT data model (including queries with Datalog). But using Datascript directly from Javascript was too painful, and when I investigated the possibility of writing the game in Clojurescript and compiling to Javascript I got lost in the maze of tooling information.
+
+Feeling overwhelmed, I finally decided to leave Clojurescript and Datascript for another assignment. Unfortunately I didn't have a lot of time left, so the game, while functional, is unpolished. After writing the previous assignment using a single game state object and unidirectional data flow, this time I tried almost the opposite. Data is stored entirely in the DOM, and the event handlers are responsible for maintaining consistency. It's a very simple application so this wasn't hard, but even so, I could clearly see why this is such a terrible way to structure programs.
+
+I was able to learn and incorporate a bit of Webpack, too, which is why the project's directory structure doesn't match the assignment instructions. The main points of interest are `src/index.js`, `src/assets/style.css`, and `dist/index.html`. The latter references `dist/main.js`, which is compiled from the former two.
